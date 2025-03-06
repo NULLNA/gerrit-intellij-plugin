@@ -45,6 +45,7 @@ public class SafeHtmlTextEditor extends JPanel {
 
         messageField = new CommitMessage(project).getEditorField();
         messageField.setBorder(BorderFactory.createEmptyBorder());
+        messageField.setFont(UIUtil.getLabelFont());
         JPanel messagePanel = new JPanel(new BorderLayout());
         messagePanel.add(messageField, BorderLayout.CENTER);
         JLabel markdownLinkLabel = new JLabel(
